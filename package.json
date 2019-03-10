@@ -1,0 +1,28 @@
+{
+  "name": "my-no-sql",
+  "version": "1.0.0",
+  "description": "MySQL client for NodeJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arshadkazmi42/my-no-sql.git"
+  },
+  "keywords": [
+    "mysql",
+    "no-mysql",
+    "mysql-client",
+    "node-mysql"
+  ],
+  "author": "Arshad Kazmi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arshadkazmi42/my-no-sql/issues"
+  },
+  "homepage": "https://github.com/arshadkazmi42/my-no-sql#readme",
+  "dependencies": {
+    "mysql": "^2.16.0"
+  }
+}

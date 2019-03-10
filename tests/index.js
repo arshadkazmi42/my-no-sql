@@ -12,7 +12,7 @@ const test = async () => {
   client.createPool()
   
   // tableName, fields (* for all), whereCondition
-  const res = await client.queryAsync('coupons', ['id, code'], {'id': 1});
+  const res = await client.queryAsync('SELECT * FROM coupons where id = ?', [1]);
   console.log(res)
 }
 

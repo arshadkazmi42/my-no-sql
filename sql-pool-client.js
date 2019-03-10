@@ -1,6 +1,6 @@
 const mysql = require('mysql');
 
-const { get, query, formatQuery } = require('./lib');
+const { getPoolConnectionAsync, poolQueryAsync } = require('./lib');
 
 
 function SqlPoolClient(options) {
@@ -16,12 +16,11 @@ SqlPoolClient.prototype.createPool = function() {
   this._poolClient = mysql.createPool(this._options);
 }
 
-SqlPoolClient.prototype.queryAsync = async function (tableName, fields, conditions) {
-  const connection = await get(this._poolClient);
-  const { formattedQuery, queryValues } = formatQuery(tableName, fields, conditions);
+SqlPoolClient.prototype.queryAsync = async function (query, values) {
+  const connection = await getPoolConnectionAsync(this._poolClient);
 
   // TODO format response
-  return await query(connection, formattedQuery, queryValues);
+  return await poolQueryAsync(connection, query, values);
 }
 
 module.exports = SqlPoolClient;

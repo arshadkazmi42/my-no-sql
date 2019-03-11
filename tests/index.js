@@ -1,19 +1,24 @@
-const SqlPoolClient = require('../sql-pool-client');
+const SqlPoolClient = require('../index');
 
 const test = async () => {
   const client = new SqlPoolClient({
     host: '127.0.0.1',
     user: 'root',
     password: 'password',
-    database: 'the-company',
+    database: 'my-no-sql',
     acquireTimeout: 10000
   })
   
-  client.createPool()
+  client.connect()
   
-  // tableName, fields (* for all), whereCondition
   const res = await client.queryAsync('SELECT * FROM coupons where id = ?', [1]);
-  console.log(res)
+  if (Object.keys(res.results[0]).length > 0) {
+    console.log('PASSED');
+  } else {
+    console.log('FAILED');
+  }
+
+  process.exit();
 }
 
 test();

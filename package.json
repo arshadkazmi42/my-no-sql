@@ -14,7 +14,8 @@
     "mysql",
     "no-mysql",
     "mysql-client",
-    "node-mysql"
+    "node-mysql",
+    "mysql pool connection"
   ],
   "author": "Arshad Kazmi",
   "license": "MIT",

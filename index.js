@@ -19,7 +19,6 @@ SqlClient.prototype.connect = function() {
 SqlClient.prototype.queryAsync = async function (query, values) {
   const connection = await getConnectionAsync(this._client);
 
-  // TODO format response
   return await executeAsync(connection, query, values);
 };
 

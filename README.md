@@ -1,6 +1,6 @@
 # my-no-sql
 
-Easy to use model based MySQL client
+Light weight easy to use MySQL client
 
 > Give us a :star: if you like our work :heart:
 

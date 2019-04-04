@@ -4,6 +4,7 @@
   "description": "MySQL client for NodeJs",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint --ignore-path .gitignore .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,5 +26,9 @@
   "homepage": "https://github.com/arshadkazmi42/my-no-sql#readme",
   "dependencies": {
     "mysql": "^2.16.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.11.1",
+    "eslint-config-strongloop": "^2.1.0"
   }
 }

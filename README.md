@@ -7,13 +7,13 @@ Light weight easy to use MySQL client
 ## Install
 
 ```
-$ npm install my-no-sql
+$ npm install @arshadkazmi42/my-no-sql
 ```
 
 ## Usage
 
 ```javascript
-const SqlClient = require('my-no-sql');
+const SqlClient = require('@arshadkazmi42/my-no-sql');
 
 const DB_OPTIONS = {
   host: 'hostname',

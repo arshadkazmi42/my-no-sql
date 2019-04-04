@@ -1,7 +1,7 @@
 {
   "name": "my-no-sql",
   "version": "1.0.0",
-  "description": "MySQL client for NodeJs",
+  "description": "Light weight easy to use MySQL client",
   "main": "index.js",
   "scripts": {
     "lint": "eslint --ignore-path .gitignore .",

@@ -1,6 +1,6 @@
 {
   "name": "@arshadkazmi42/my-no-sql",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Light weight easy to use MySQL client",
   "main": "index.js",
   "scripts": {
